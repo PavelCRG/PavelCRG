@@ -1,13 +1,10 @@
-<!-- Баннер и подпись — файлы в папке assets/ -->
-<img src="./assets/banner.svg" width="100%" alt="Pavel | Fullstack Developer" />
-
 <div align="center">
-  <img src="./assets/typing.svg" alt="Hi! My name is Pavel — Fullstack Developer" />
+  <img src="./assets/typing.svg" alt="Hi! My name is Pavel" />
 </div>
 
 <br/>
 
-<!-- Карточки GitHub: живые ссылки (обновляются сами). Файлы в stats-output/ — резерв от Actions -->
+<!-- Stats обновляются сами при новых репозиториях и коммитах на GitHub -->
 <div align="center">
   <table>
     <tr>
@@ -94,7 +91,9 @@
 
 <br/>
 
-<!-- Змейка: файл snake-output/snake.svg создаётся Actions после push -->
 <div align="center">
-  <img src="./snake-output/snake.svg" alt="Contribution snake" />
+  <img
+    src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/snake-output/snake.svg"
+    alt="Contribution snake"
+  />
 </div>

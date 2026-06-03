@@ -1,28 +1,28 @@
-<div align="center">
+<div align="left">
   <img src="./assets/typing.svg" alt="Hi! My name is Pavel" />
 </div>
 
 <br/>
 
-<!-- Stats обновляются сами при новых репозиториях и коммитах на GitHub -->
-<div align="center">
+<!-- Stats, streak и languages — живые ссылки, обновляются сами -->
+<div align="left">
   <table>
     <tr>
-      <td valign="top" align="center">
+      <td valign="top" align="left">
         <img
           src="https://github-readme-stats-sigma-five.vercel.app/api?username=PavelCRG&show_icons=true&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff"
           height="165"
           alt="GitHub stats"
         />
       </td>
-      <td valign="top" align="center">
+      <td valign="top" align="left">
         <img
           src="https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9"
           height="165"
           alt="GitHub streak"
         />
       </td>
-      <td valign="top" align="center">
+      <td valign="top" align="left">
         <img
           src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=PavelCRG&layout=compact&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"
           height="165"
@@ -35,9 +35,9 @@
 
 <br/>
 
-<h3 align="center">🛠 Tech Stack</h3>
+<h3 align="left">🛠 Tech Stack</h3>
 
-<div align="center">
+<div align="left">
 
 **Frontend**
 
@@ -77,9 +77,9 @@
 
 <br/>
 
-<h3 align="center">🔗 Connect with me</h3>
+<h3 align="left">🔗 Connect with me</h3>
 
-<div align="center">
+<div align="left">
   <a href="https://x.com/whois77x" target="_blank">
     <img src="https://img.shields.io/static/v1?message=X&logo=x&label=&color=000000&logoColor=FFFFFF&style=for-the-badge" height="36" alt="X" />
   </a>
@@ -91,7 +91,7 @@
 
 <br/>
 
-<div align="center">
+<div align="left">
   <img
     src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/snake-output/snake.svg"
     alt="Contribution snake"

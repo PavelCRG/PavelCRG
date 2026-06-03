@@ -1,52 +1,100 @@
-<h2 align="left">Hi 👋! My name is Pavel and I'm a Fullstack Developer.</h2>
+<!-- Баннер и подпись — файлы в папке assets/ -->
+<img src="./assets/banner.svg" width="100%" alt="Pavel | Fullstack Developer" />
 
-<!-- Stats Cards (требуют workflow) -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/stats-output/stats.svg" height="150" alt="stats" />
-  <img src="https://streak-stats.demolab.com?user=PavelCRG&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5" height="150" alt="streak" />
-  <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/languages-output/languages.svg" height="150" alt="languages" />
+  <img src="./assets/typing.svg" alt="Hi! My name is Pavel — Fullstack Developer" />
 </div>
 
 <br/>
 
-<!-- Tech Stack -->
-<h3 align="left">🛠 Tech Stack</h3>
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript" title="JavaScript"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript" title="TypeScript"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react" title="React"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5" title="HTML5"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3" title="CSS3"/>
-  <br/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python" title="Python"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp" title="C#"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus" title="C++"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="30" alt="rust" title="Rust"/>
-  <br/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql" title="MySQL"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="postgresql" title="PostgreSQL"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode" title="VS Code"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="30" alt="visualstudio" title="Visual Studio"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git" title="Git"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github" title="GitHub"/>
+<!-- Карточки GitHub: живые ссылки (обновляются сами). Файлы в stats-output/ — резерв от Actions -->
+<div align="center">
+  <table>
+    <tr>
+      <td valign="top" align="center">
+        <img
+          src="https://github-readme-stats-sigma-five.vercel.app/api?username=PavelCRG&show_icons=true&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff"
+          height="165"
+          alt="GitHub stats"
+        />
+      </td>
+      <td valign="top" align="center">
+        <img
+          src="https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9"
+          height="165"
+          alt="GitHub streak"
+        />
+      </td>
+      <td valign="top" align="center">
+        <img
+          src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=PavelCRG&layout=compact&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"
+          height="165"
+          alt="Top languages"
+        />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br/>
 
-<!-- Social -->
-<h3 align="left">🔗 Connect with me</h3>
-<div align="left">
+<h3 align="center">🛠 Tech Stack</h3>
+
+<div align="center">
+
+**Frontend**
+
+<br/>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="36" alt="JavaScript" title="JavaScript" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="36" alt="TypeScript" title="TypeScript" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="36" alt="React" title="React" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="36" alt="HTML5" title="HTML5" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="36" alt="CSS3" title="CSS3" />
+
+<br/><br/>
+
+**Backend & Languages**
+
+<br/>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="36" alt="Python" title="Python" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="36" alt="C#" title="C#" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="36" alt="C++" title="C++" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="36" alt="Rust" title="Rust" />
+
+<br/><br/>
+
+**Databases & Tools**
+
+<br/>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="36" alt="MySQL" title="MySQL" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="36" alt="PostgreSQL" title="PostgreSQL" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="36" alt="VS Code" title="VS Code" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="36" alt="Visual Studio" title="Visual Studio" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="36" alt="Git" title="Git" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="36" alt="GitHub" title="GitHub" />
+
+</div>
+
+<br/>
+
+<h3 align="center">🔗 Connect with me</h3>
+
+<div align="center">
   <a href="https://x.com/whois77x" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=X&logo=x&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="X" />
+    <img src="https://img.shields.io/static/v1?message=X&logo=x&label=&color=000000&logoColor=FFFFFF&style=for-the-badge" height="36" alt="X" />
   </a>
+  &nbsp;
   <a href="https://t.me/Whois77x" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Telegram" />
+    <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=FFFFFF&style=for-the-badge" height="36" alt="Telegram" />
   </a>
 </div>
 
-<br clear="both"/>
+<br/>
 
-<!-- Snake Animation (требует workflow) -->
+<!-- Змейка: файл snake-output/snake.svg создаётся Actions после push -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/snake-output/snake.svg" alt="Snake animation" />
+  <img src="./snake-output/snake.svg" alt="Contribution snake" />
 </div>

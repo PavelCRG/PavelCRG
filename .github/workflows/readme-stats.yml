@@ -1,0 +1,41 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "assets/**"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats cards
+        env:
+          STATS_BASE: https://github-readme-stats-sigma-five.vercel.app
+          THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff
+          USER: PavelCRG
+        run: |
+          mkdir -p stats-output languages-output
+          curl -fsSL \
+            "${STATS_BASE}/api?username=${USER}&show_icons=true&${THEME}" \
+            -o stats-output/stats.svg
+          curl -fsSL \
+            "${STATS_BASE}/api/top-langs/?username=${USER}&layout=compact&${THEME}" \
+            -o languages-output/languages.svg
+
+      - name: Commit stats
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update readme stats"
+          file_pattern: stats-output/* languages-output/*

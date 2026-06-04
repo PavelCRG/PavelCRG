@@ -6,30 +6,24 @@
 
 | Папка | Назначение |
 |-------|------------|
-| `assets/` | Локальные SVG: баннер, typing, резервные копии карточек |
-| `stats-output/` | `stats.svg` — обновляется workflow раз в сутки |
+| `assets/` | Локальные SVG: typing, резервные копии карточек |
+| `stats-output/` | `stats.svg`, `streak.svg` — обновляются workflow |
 | `languages-output/` | `languages.svg` — обновляется workflow |
-| `snake-output/` | `snake.svg` — появится после первого запуска **Generate Snake** |
+| `snake-output/` | `snake.svg` — змейка из contribution graph |
 | `.github/workflows/` | Автоматизация (stats + snake) |
-| `docs/` | Документация для себя (на профиль не влияет) |
+| `docs/` | Документация (на профиль не влияет) |
 
 ## Workflows
 
-1. **Update README Stats** (`readme-stats.yml`) — скачивает карточки stats/languages и коммитит в `stats-output/` и `languages-output/`.
-2. **Generate Snake** (`snake.yml`) — рисует змейку из contribution graph и коммитит в `snake-output/snake.svg`.
+1. **Update README Stats** (`readme-stats.yml`) — скачивает stats, languages и streak (с fallback, если streak API недоступен) и коммитит в `stats-output/` и `languages-output/`.
+2. **Generate Snake** (`snake.yml`) — рисует змейку и коммитит в `snake-output/snake.svg`.
 
-После `git push` зайди в **Actions** → **Run workflow** для обоих, если snake ещё не виден.
+В `README.md` карточки и змейка подключены **локально** (`./stats-output/...`, `./snake-output/snake.svg`), чтобы профиль не ломался при сбоях внешних API.
 
-## Обновить баннер или typing
+После `git push` при необходимости: **Actions** → **Run workflow** для обоих workflow.
 
-1. Отредактируй URL в `assets/` (или скачай новый SVG с [capsule-render](https://github.com/kyechan99/capsule-render) / [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg)).
-2. Замени файлы в `assets/`.
-3. `git add` → `commit` → `push`.
+## API (для ручного обновления)
 
-## Ссылки на API (если нужно перекачать вручную)
-
-- Stats: `https://github-readme-stats-sigma-five.vercel.app/api?username=PavelCRG&...`
+- Stats: `https://github-readme-stats-sigma-five.vercel.app/api?username=PavelCRG&hide_title=true&...`
 - Languages: `https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=PavelCRG&...`
-- Streak: `https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&...`
-
-Основной `github-readme-stats.vercel.app` иногда недоступен — workflow использует зеркало **sigma-five**.
+- Streak: `https://streak-stats.demolab.com?user=PavelCRG&...` (иногда 503 — тогда остаётся последний `stats-output/streak.svg`)

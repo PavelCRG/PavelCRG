@@ -1,77 +1,67 @@
 <div align="center">
 
-  <img src="./assets/hero.svg" width="100%" alt="Pavel — Full-stack Developer" />
+  <img src="./assets/hero.svg" alt="Pavel — Full-stack Developer" />
 
-  <br/>
+  <br/><br/>
 
   <a href="https://pavelcrg.netlify.app/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-portfolio.svg" height="44" alt="Portfolio" />
+    <img src="./assets/btn-portfolio.svg" height="40" alt="Portfolio" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/PavelCRG" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-github.svg" height="44" alt="GitHub" />
+    <img src="./assets/btn-github.svg" height="40" alt="GitHub" />
   </a>
 
   <br/><br/>
 
-  <img src="./assets/divider-activity.svg" width="100%" alt="" />
+  <img src="./assets/divider-activity.svg" width="850" alt="" />
 
   <table>
     <tr>
-      <td align="center">
-        <img
-          src="https://github-readme-stats-sigma-five.vercel.app/api?username=PavelCRG&show_icons=true&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&hide_title=true"
-          height="165"
-          alt="GitHub stats"
-        />
+      <td align="center" valign="top">
+        <img src="./stats-output/stats.svg" height="165" alt="GitHub stats" />
       </td>
-      <td align="center">
-        <img
-          src="https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9"
-          height="165"
-          alt="GitHub streak"
-        />
+      <td align="center" valign="top">
+        <img src="./stats-output/streak.svg" height="165" alt="GitHub streak" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="./languages-output/languages.svg" alt="Most used languages" />
       </td>
     </tr>
   </table>
 
   <br/>
 
-  <img
-    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=PavelCRG&layout=compact&langs_count=8&card_width=495&theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"
-    alt="Most used languages"
-  />
+  <img src="./assets/divider-stack.svg" width="850" alt="" />
 
-  <br/><br/>
+  <table align="center">
+    <tr>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="JavaScript" title="JavaScript" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40" alt="TypeScript" title="TypeScript" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="40" alt="React" title="React" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="HTML5" title="HTML5" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="CSS3" title="CSS3" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="40" alt="Python" title="Python" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" width="40" alt="C#" title="C#" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" width="40" alt="C++" title="C++" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="40" width="40" alt="Rust" title="Rust" /></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="40" alt="MySQL" title="MySQL" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="40" alt="PostgreSQL" title="PostgreSQL" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="40" alt="VS Code" title="VS Code" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="40" width="40" alt="Visual Studio" title="Visual Studio" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" width="40" alt="Git" title="Git" /></td>
+      <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" height="40" width="40" alt="GitHub" title="GitHub" /></td>
+    </tr>
+  </table>
 
-  <img src="./assets/divider-stack.svg" width="100%" alt="" />
-
-  <img
-    src="https://go-skill-icons.vercel.app/api/icons?i=js,ts,react,nextjs,html,css,python,cs,cpp,rust,mysql,postgresql,docker,git,github&theme=dark&perline=7"
-    alt="Tech stack icons"
-  />
-
-  <br/><br/>
-
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="42" width="42" alt="JavaScript" title="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="42" width="42" alt="TypeScript" title="TypeScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="42" width="42" alt="React" title="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="42" width="42" alt="Next.js" title="Next.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="42" width="42" alt="Python" title="Python" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="42" width="42" alt="C#" title="C#" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="42" width="42" alt="Rust" title="Rust" />
   <br/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" width="42" alt="PostgreSQL" title="PostgreSQL" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="42" width="42" alt="MySQL" title="MySQL" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="42" width="42" alt="Docker" title="Docker" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="42" width="42" alt="VS Code" title="VS Code" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="42" width="42" alt="Git" title="Git" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" height="42" width="42" alt="GitHub" title="GitHub" />
 
-  <br/><br/>
+  <img src="./assets/divider-contributions.svg" width="850" alt="" />
 
-  <img src="./assets/divider-contributions.svg" width="100%" alt="" />
-
-  <img src="./snake-output/snake.svg" width="100%" alt="Contribution graph" />
+  <img src="./snake-output/snake.svg" alt="Contribution graph" />
 
 </div>

@@ -1,8 +1,8 @@
 
       <svg
         width="495"
-        height="195"
-        viewBox="0 0 495 195"
+        height="165"
+        viewBox="0 0 495 165"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -54,7 +54,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 127.48201653723824;
+        stroke-dashoffset: 127.45792751608627;
       }
     }
   
@@ -96,24 +96,10 @@
         />
 
         
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
-        <g transform="translate(0, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >whois77x' GitHub Stats</text>
-    </g>
-      </g>
-    
 
         <g
           data-testid="main-card-body"
-          transform="translate(0, 55)"
+          transform="translate(0, 25)"
         >
           
     <g data-testid="rank-circle" 
@@ -162,7 +148,7 @@
         x="200" 
         y="12.5" 
         data-testid="commits"
-      >96</text>
+      >99</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">

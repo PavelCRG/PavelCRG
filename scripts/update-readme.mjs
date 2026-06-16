@@ -34,9 +34,10 @@ const LOGO = {
 function shield(name, percent, color) {
   const hex = color.replace("#", "");
   const logo = LOGO[name];
-  const text = encodeURIComponent(`${name} ${percent}%`);
-  const logoPart = logo ? `&logo=${logo}&logoColor=white` : "";
-  return `  <img src="https://img.shields.io/badge/${text}-${hex}?style=for-the-badge${logoPart}" alt="${name}" />`;
+  const text = encodeURIComponent(name);
+  const pct = encodeURIComponent(`${percent}%`);
+  const logoPart = logo ? `&logo=${logo}&logoColor=${name === "JavaScript" ? "000000" : "FFFFFF"}` : "";
+  return `  <img src="https://img.shields.io/badge/${text}-${pct}-${hex}?style=flat-square&labelColor=21262D&color=30363D${logoPart}" height="24" alt="${name}" />`;
 }
 
 function replaceBlock(content, tag, body) {
@@ -50,7 +51,7 @@ const { languages, scannedAt, source } = config;
 
 const langBadges = languages.map((l) => shield(l.name, l.percent, l.color)).join("\n");
 
-let scanInfo = "<sub>Language mix from <code>config/languages.json</code> · edit manually or add <code>GH_PAT</code> secret for auto-scan</sub>";
+let scanInfo = "<sub>Curated from <code>config/languages.json</code> · add <code>GH_PAT</code> for private repo scan</sub>";
 if (source === "private-scan" && scannedAt) {
   let report;
   try {

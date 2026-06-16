@@ -1,15 +1,15 @@
 
       <svg
-        width="350"
+        width="545"
         height="170"
-        viewBox="0 0 350 170"
+        viewBox="0 0 545 170"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #58a6ff;
+            fill: #A8E524;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           
@@ -28,7 +28,7 @@
           rx="4.5"
           height="99%"
           stroke="#E4E2E2"
-          width="349"
+          width="544"
           fill="#0d1117"
           stroke-opacity="0"
         />
@@ -57,7 +57,7 @@
     <svg data-testid="lang-items" x="25">
       
       <mask id="rect-mask">
-        <rect x="0" y="0" width="300" height="8" fill="white" rx="5" />
+        <rect x="0" y="0" width="495" height="8" fill="white" rx="5" />
       </mask>
       
           <rect
@@ -65,7 +65,7 @@
             data-testid="lang-progress"
             x="0" 
             y="0"
-            width="277.70" 
+            width="457.30" 
             height="8"
             fill="#e34c26"
           />
@@ -73,9 +73,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="277.7" 
+            x="457.3" 
             y="0"
-            width="18.73" 
+            width="14.37" 
             height="8"
             fill="#663399"
           />
@@ -83,9 +83,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="286.43" 
+            x="471.67" 
             y="0"
-            width="15.129999999999999" 
+            width="18.45" 
             height="8"
             fill="#3178c6"
           />
@@ -93,9 +93,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="291.56" 
+            x="480.12" 
             y="0"
-            width="14.99" 
+            width="18.22" 
             height="8"
             fill="#dea584"
           />
@@ -103,9 +103,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="296.55" 
+            x="488.34000000000003" 
             y="0"
-            width="13.44" 
+            width="16.66" 
             height="8"
             fill="#f1e05a"
           />
@@ -114,14 +114,14 @@
     <g transform="translate(0, 25)">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 92.57%
+        HTML 92.38%
       </text>
     </g>
   
     <g transform="translate(150, 25)">
       <circle cx="5" cy="6" r="5" fill="#663399" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        CSS 2.91%
+        CSS 2.90%
       </text>
     </g>
   
@@ -142,7 +142,7 @@
     <g transform="translate(0, 75)">
       <circle cx="5" cy="6" r="5" fill="#f1e05a" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript 1.15%
+        JavaScript 1.35%
       </text>
     </g>
   

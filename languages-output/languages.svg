@@ -9,7 +9,7 @@
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #A8E524;
+            fill: #58a6ff;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           
@@ -19,7 +19,7 @@
           
         </style>
 
-        undefined
+        
 
         <rect
           data-testid="card-bg"
@@ -65,7 +65,7 @@
             data-testid="lang-progress"
             x="0" 
             y="0"
-            width="457.30" 
+            width="458.21" 
             height="8"
             fill="#e34c26"
           />
@@ -73,9 +73,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="457.3" 
+            x="458.21" 
             y="0"
-            width="14.37" 
+            width="14.40" 
             height="8"
             fill="#663399"
           />
@@ -83,9 +83,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="471.67" 
+            x="472.60999999999996" 
             y="0"
-            width="18.45" 
+            width="18.47" 
             height="8"
             fill="#3178c6"
           />
@@ -93,9 +93,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="480.12" 
+            x="481.08" 
             y="0"
-            width="18.22" 
+            width="18.23" 
             height="8"
             fill="#dea584"
           />
@@ -103,9 +103,9 @@
           <rect
             mask="url(#rect-mask)" 
             data-testid="lang-progress"
-            x="488.34000000000003" 
+            x="489.31" 
             y="0"
-            width="16.66" 
+            width="15.68" 
             height="8"
             fill="#f1e05a"
           />
@@ -114,14 +114,14 @@
     <g transform="translate(0, 25)">
       <circle cx="5" cy="6" r="5" fill="#e34c26" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        HTML 92.38%
+        HTML 92.57%
       </text>
     </g>
   
     <g transform="translate(150, 25)">
       <circle cx="5" cy="6" r="5" fill="#663399" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        CSS 2.90%
+        CSS 2.91%
       </text>
     </g>
   
@@ -142,7 +142,7 @@
     <g transform="translate(0, 75)">
       <circle cx="5" cy="6" r="5" fill="#f1e05a" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JavaScript 1.35%
+        JavaScript 1.15%
       </text>
     </g>
   

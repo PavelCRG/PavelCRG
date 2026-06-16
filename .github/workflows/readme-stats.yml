@@ -23,11 +23,11 @@ jobs:
       - name: Fetch stats cards from public repos
         env:
           STATS_BASE: https://github-readme-stats-sigma-five.vercel.app
-          THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=A8E524&text_color=c9d1d9&icon_color=58a6ff&hide_title=true
-          LANGS_THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=A8E524&text_color=c9d1d9&icon_color=58a6ff
+          THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&hide_title=true
+          LANGS_THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9
           USER: PavelCRG
-          LANGS_OPTS: layout=compact&langs_count=10&card_width=495
-          STREAK_URL: https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=A8E524&ring=A8E524&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9
+          LANGS_OPTS: layout=compact&langs_count=8&card_width=495
+          STREAK_URL: https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9
         run: |
           mkdir -p stats-output languages-output
           curl -fsSL \
@@ -36,6 +36,8 @@ jobs:
           curl -fsSL \
             "${STATS_BASE}/api/top-langs/?username=${USER}&${LANGS_OPTS}&${LANGS_THEME}" \
             -o languages-output/languages.svg
+          sed -i 's/undefined//g' stats-output/stats.svg languages-output/languages.svg 2>/dev/null || \
+            sed -i '' 's/undefined//g' stats-output/stats.svg languages-output/languages.svg
           if curl -fsSL --retry 3 --retry-delay 5 "${STREAK_URL}" -o stats-output/streak.svg; then
             echo "Streak card updated"
           elif [ -f stats-output/streak.svg ]; then

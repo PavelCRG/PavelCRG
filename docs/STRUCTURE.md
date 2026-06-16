@@ -1,23 +1,16 @@
 # Структура профиля GitHub (PavelCRG)
 
-Репозиторий `PavelCRG/PavelCRG` — **profile README**. На GitHub виден только корневой `README.md`.
+## Дизайн (assets/)
 
-## Как устроено
+- `hero.svg`, кнопки, `divider-*.svg`, `stack.svg` — статичный дизайн в цветах портфолио
 
-- **Дизайн** — HTML в `README.md`: заголовки, shields.io бейджи, таблица для stats/streak
-- **Языки** — бейджи в README; скрипт `update-readme.mjs` читает `config/languages.json`
-- **Приватные репо** — `scan-private-repos.mjs` + секрет `GH_PAT` (см. `docs/PRIVATE_REPOS.md`)
-- **Stats / streak** — `stats-output/*.svg` (GitHub Actions, внешние API)
-- **Snake** — `snake-output/snake.svg` (workflow Generate Snake)
+## Данные (обновляет Actions)
 
-## Скрипты
+| Файл | Источник |
+|------|----------|
+| `stats-output/stats.svg` | GitHub Readme Stats — **публичные** репо |
+| `stats-output/streak.svg` | Streak Stats |
+| `languages-output/languages.svg` | Top Langs API, без профильных репо (`PavelCRG`, `Pavel-Sleptsov`) |
+| `snake-output/snake.svg` | Generate Snake workflow |
 
-| Скрипт | Назначение |
-|--------|------------|
-| `scan-private-repos.mjs` | Языки из всех репо → `config/languages.json` + `stats-output/repo-report.json` |
-| `update-readme.mjs` | Обновляет блоки `LANGUAGES` и `SCAN-INFO` в README |
-
-## Workflows
-
-1. **Update README Stats** — scan → README badges → stats/streak
-2. **Generate Snake** — contribution snake
+Workflow: **Update README Stats** — раз в сутки + вручную.

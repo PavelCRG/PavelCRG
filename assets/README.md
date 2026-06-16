@@ -1,5 +1,5 @@
 # assets/
 
-Резервные SVG (stats, streak, typing, banner). **На профиле не используются** — README собран из HTML и shields.io.
+Статичные SVG для оформления профиля (hero, кнопки, разделители, stack).
 
-Актуальные картинки профиля: `stats-output/`, `snake-output/`.
+Карточки **stats / streak / languages** — в `stats-output/` и `languages-output/`, обновляются Actions из публичных репозиториев GitHub.

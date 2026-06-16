@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 130" width="850" height="130">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="850" height="130" rx="14" fill="url(#bg)" stroke="#30363d"/>
+  <text x="40" y="36" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.2em">TECH STACK</text>
+  <g font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="500">
+    <rect x="40" y="52" width="96" height="28" rx="8" fill="#21262d" stroke="#3178c6" stroke-width="1"/><text x="88" y="70" text-anchor="middle" fill="#F2F2F2">TypeScript</text>
+    <rect x="148" y="52" width="72" height="28" rx="8" fill="#21262d" stroke="#61dafb" stroke-width="1" stroke-opacity="0.6"/><text x="184" y="70" text-anchor="middle" fill="#F2F2F2">React</text>
+    <rect x="232" y="52" width="76" height="28" rx="8" fill="#21262d" stroke="#F2F2F2" stroke-width="1" stroke-opacity="0.3"/><text x="270" y="70" text-anchor="middle" fill="#F2F2F2">Next.js</text>
+    <rect x="320" y="52" width="64" height="28" rx="8" fill="#21262d" stroke="#dea584" stroke-width="1"/><text x="352" y="70" text-anchor="middle" fill="#F2F2F2">Rust</text>
+    <rect x="396" y="52" width="72" height="28" rx="8" fill="#21262d" stroke="#3572A5" stroke-width="1"/><text x="432" y="70" text-anchor="middle" fill="#F2F2F2">Python</text>
+    <rect x="480" y="52" width="48" height="28" rx="8" fill="#21262d" stroke="#178600" stroke-width="1"/><text x="504" y="70" text-anchor="middle" fill="#F2F2F2">C#</text>
+    <rect x="540" y="52" width="52" height="28" rx="8" fill="#21262d" stroke="#f34b7d" stroke-width="1"/><text x="566" y="70" text-anchor="middle" fill="#F2F2F2">C++</text>
+    <rect x="604" y="52" width="88" height="28" rx="8" fill="#21262d" stroke="#4169E1" stroke-width="1"/><text x="648" y="70" text-anchor="middle" fill="#F2F2F2">PostgreSQL</text>
+    <rect x="704" y="52" width="72" height="28" rx="8" fill="#21262d" stroke="#2496ED" stroke-width="1"/><text x="740" y="70" text-anchor="middle" fill="#F2F2F2">Docker</text>
+    <rect x="40" y="90" width="80" height="28" rx="8" fill="#21262d" stroke="#e34c26" stroke-width="1"/><text x="80" y="108" text-anchor="middle" fill="#F2F2F2">HTML</text>
+    <rect x="132" y="90" width="64" height="28" rx="8" fill="#21262d" stroke="#663399" stroke-width="1"/><text x="164" y="108" text-anchor="middle" fill="#F2F2F2">CSS</text>
+    <rect x="208" y="90" width="72" height="28" rx="8" fill="#21262d" stroke="#4479A1" stroke-width="1"/><text x="244" y="108" text-anchor="middle" fill="#F2F2F2">MySQL</text>
+    <rect x="292" y="90" width="64" height="28" rx="8" fill="#21262d" stroke="#F05032" stroke-width="1"/><text x="324" y="108" text-anchor="middle" fill="#F2F2F2">Git</text>
+  </g>
+</svg>

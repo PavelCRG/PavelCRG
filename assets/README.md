@@ -1,14 +1,5 @@
-# Зачем эти SVG?
+# assets/
 
-На профиле GitHub показывается **только** `README.md` в корне. Папка `assets/` — локальные файлы и резервные копии.
+Резервные SVG (stats, streak, typing, banner). **На профиле не используются** — README собран из HTML и shields.io.
 
-| Файл | Где используется | Нужен для профиля? |
-|------|------------------|-------------------|
-| `typing.svg` | В README: `./assets/typing.svg` | **Да** |
-| `stats.svg` | Резерв | Нет |
-| `languages.svg` | Резерв | Нет |
-| `streak.svg` | Резерв; fallback для workflow → `stats-output/streak.svg` | Нет |
-
-**Stats / Streak / Languages** на профиле: `./stats-output/stats.svg`, `./stats-output/streak.svg`, `./languages-output/languages.svg` (обновляются Actions).
-
-**Snake:** `./snake-output/snake.svg` (workflow **Generate Snake**).
+Актуальные картинки профиля: `stats-output/`, `snake-output/`.

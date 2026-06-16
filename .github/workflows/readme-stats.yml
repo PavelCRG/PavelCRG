@@ -8,7 +8,6 @@ on:
     branches: [main]
     paths-ignore:
       - "docs/**"
-      - "assets/**"
 
 permissions:
   contents: write
@@ -20,34 +19,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats cards
+      - name: Scan repos and refresh README
         env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           STATS_BASE: https://github-readme-stats-sigma-five.vercel.app
           THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&hide_title=true
           USER: PavelCRG
           STREAK_URL: https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9
         run: |
-          mkdir -p stats-output languages-output
+          mkdir -p stats-output
+          node scripts/scan-private-repos.mjs || true
+          node scripts/update-readme.mjs
           curl -fsSL \
             "${STATS_BASE}/api?username=${USER}&show_icons=true&${THEME}" \
             -o stats-output/stats.svg
-          curl -fsSL \
-            "${STATS_BASE}/api/top-langs/?username=${USER}&layout=compact&${THEME}" \
-            -o languages-output/languages.svg
           if curl -fsSL --retry 3 --retry-delay 5 "${STREAK_URL}" -o stats-output/streak.svg; then
             echo "Streak card updated"
           elif [ -f stats-output/streak.svg ]; then
             echo "Streak API unavailable — keeping previous streak.svg"
           elif [ -f assets/streak.svg ]; then
             cp assets/streak.svg stats-output/streak.svg
-            echo "Streak API unavailable — using assets/streak.svg"
-          else
-            echo "No streak.svg available"
-            exit 1
           fi
 
-      - name: Commit stats
+      - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update readme stats"
-          file_pattern: stats-output/* languages-output/*
+          commit_message: "chore: update profile stats and languages"
+          file_pattern: README.md stats-output/*

@@ -9,7 +9,7 @@
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #A8E524;
+            fill: #58a6ff;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           
@@ -32,13 +32,13 @@
     }
     
     .rank-circle-rim {
-      stroke: #A8E524;
+      stroke: #58a6ff;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #A8E524;
+      stroke: #58a6ff;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -54,7 +54,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 127.41777891647102;
+        stroke-dashoffset: 127.4418681106373;
       }
     }
   
@@ -81,7 +81,7 @@
   
         </style>
 
-        undefined
+        
 
         <rect
           data-testid="card-bg"
@@ -148,7 +148,7 @@
         x="200" 
         y="12.5" 
         data-testid="commits"
-      >104</text>
+      >101</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">

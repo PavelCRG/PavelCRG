@@ -1,13 +1,13 @@
 name: Generate Snake
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/snake.yml"
-  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update README Stats"]
+    types: [completed]
+    branches: [main]
 
 concurrency:
   group: snake-${{ github.repository }}
@@ -18,18 +18,17 @@ permissions:
 
 jobs:
   generate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate snake
+      - name: Generate snake from contribution graph
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: PavelCRG
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
@@ -37,17 +36,9 @@ jobs:
         run: |
           mkdir -p snake-output
           cp dist/github-contribution-grid-snake-dark.svg snake-output/snake.svg
-          ls -la snake-output/
 
-      - name: Commit and push snake
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          git add snake-output/snake.svg
-          if git diff --staged --quiet; then
-            echo "Snake unchanged, skip commit"
-            exit 0
-          fi
-          git commit -m "chore: update contribution snake [skip ci]"
-          git push origin HEAD:main
+      - name: Commit snake
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update contribution snake"
+          file_pattern: snake-output/snake.svg

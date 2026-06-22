@@ -1,60 +1,63 @@
 <div align="center">
 
   <a href="https://pavelcrg.netlify.app/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/hero.svg#gh-dark-mode-only" alt="Pavel — Full-stack Developer" />
-    <img src="./assets/hero-light.svg#gh-light-mode-only" alt="Pavel — Full-stack Developer" />
+    <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/hero.svg#gh-dark-mode-only" width="850" alt="Pavel — Full-stack Developer" />
+    <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/hero-light.svg#gh-light-mode-only" width="850" alt="Pavel — Full-stack Developer" />
   </a>
 
   <br/><br/>
 
-  <a href="https://pavelcrg.netlify.app/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-portfolio.svg#gh-dark-mode-only" height="40" alt="Portfolio" />
-    <img src="./assets/btn-portfolio-light.svg#gh-light-mode-only" height="40" alt="Portfolio" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/PavelCRG" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-github.svg#gh-dark-mode-only" height="40" alt="GitHub" />
-    <img src="./assets/btn-github-light.svg#gh-light-mode-only" height="40" alt="GitHub" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://t.me/whois77x" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-telegram.svg#gh-dark-mode-only" height="40" alt="Telegram" />
-    <img src="./assets/btn-telegram-light.svg#gh-light-mode-only" height="40" alt="Telegram" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://x.com/whois77x" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/btn-x.svg#gh-dark-mode-only" height="40" alt="X" />
-    <img src="./assets/btn-x-light.svg#gh-light-mode-only" height="40" alt="X" />
-  </a>
-
-  <br/><br/>
-
-  <img src="./assets/divider-activity.svg#gh-dark-mode-only" width="850" alt="" />
-  <img src="./assets/divider-activity-light.svg#gh-light-mode-only" width="850" alt="" />
-
-  <table>
+  <table align="center" cellpadding="4">
     <tr>
-      <td align="center" valign="top">
-        <img src="./stats-output/stats.svg#gh-dark-mode-only" width="495" alt="GitHub stats" />
-        <img src="./stats-output/stats-light.svg#gh-light-mode-only" width="495" alt="GitHub stats" />
+      <td>
+        <a href="https://pavelcrg.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-portfolio.svg#gh-dark-mode-only" height="40" alt="Portfolio" />
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-portfolio-light.svg#gh-light-mode-only" height="40" alt="Portfolio" />
+        </a>
       </td>
-      <td align="center" valign="top">
-        <img src="./stats-output/streak.svg#gh-dark-mode-only" width="495" alt="GitHub streak" />
-        <img src="./stats-output/streak-light.svg#gh-light-mode-only" width="495" alt="GitHub streak" />
+      <td>
+        <a href="https://github.com/PavelCRG" target="_blank" rel="noopener noreferrer">
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-github.svg#gh-dark-mode-only" height="40" alt="GitHub" />
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-github-light.svg#gh-light-mode-only" height="40" alt="GitHub" />
+        </a>
       </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="./languages-output/languages.svg#gh-dark-mode-only" width="495" alt="Most used languages" />
-        <img src="./languages-output/languages-light.svg#gh-light-mode-only" width="495" alt="Most used languages" />
+      <td>
+        <a href="https://t.me/whois77x" target="_blank" rel="noopener noreferrer">
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-telegram.svg#gh-dark-mode-only" height="40" alt="Telegram" />
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-telegram-light.svg#gh-light-mode-only" height="40" alt="Telegram" />
+        </a>
+      </td>
+      <td>
+        <a href="https://x.com/whois77x" target="_blank" rel="noopener noreferrer">
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-x.svg#gh-dark-mode-only" height="40" alt="X" />
+          <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/assets/btn-x-light.svg#gh-light-mode-only" height="40" alt="X" />
+        </a>
       </td>
     </tr>
   </table>
 
-  <br/>
+  <br/><br/>
 
-  <img src="./assets/divider-stack.svg#gh-dark-mode-only" width="850" alt="" />
-  <img src="./assets/divider-stack-light.svg#gh-light-mode-only" width="850" alt="" />
+  <table>
+    <tr>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/stats-output/stats.svg#gh-dark-mode-only" width="495" alt="GitHub stats" />
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/stats-output/stats-light.svg#gh-light-mode-only" width="495" alt="GitHub stats" />
+      </td>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/stats-output/streak.svg#gh-dark-mode-only" width="495" alt="GitHub streak" />
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/stats-output/streak-light.svg#gh-light-mode-only" width="495" alt="GitHub streak" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/languages-output/languages.svg#gh-dark-mode-only" width="495" alt="Most used languages" />
+        <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/languages-output/languages-light.svg#gh-light-mode-only" width="495" alt="Most used languages" />
+      </td>
+    </tr>
+  </table>
+
+  <br/><br/>
 
   <table align="center">
     <tr>
@@ -78,12 +81,9 @@
     </tr>
   </table>
 
-  <br/>
+  <br/><br/>
 
-  <img src="./assets/divider-contributions.svg#gh-dark-mode-only" width="850" alt="" />
-  <img src="./assets/divider-contributions-light.svg#gh-light-mode-only" width="850" alt="" />
-
-  <img src="./snake-output/snake.svg#gh-dark-mode-only" alt="Contribution graph" />
-  <img src="./snake-output/snake-light.svg#gh-light-mode-only" alt="Contribution graph" />
+  <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/snake-output/snake.svg#gh-dark-mode-only" alt="Contribution graph" />
+  <img src="https://raw.githubusercontent.com/PavelCRG/PavelCRG/main/snake-output/snake-light.svg#gh-light-mode-only" alt="Contribution graph" />
 
 </div>

@@ -23,27 +23,43 @@ jobs:
       - name: Fetch stats cards from public repos
         env:
           STATS_BASE: https://github-readme-stats-sigma-five.vercel.app
-          THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&hide_title=true
-          LANGS_THEME: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9
           USER: PavelCRG
-          LANGS_OPTS: layout=compact&langs_count=8&card_width=495
-          STREAK_URL: https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9
+          LANGS_OPTS: layout=compact&langs_count=8&card_width=495&exclude_repo=PavelCRG,Pavel-Sleptsov
+          THEME_DARK: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=A8E524&text_color=c9d1d9&icon_color=A8E524&hide_title=true
+          LANGS_DARK: theme=tokyo_night&hide_border=true&bg_color=0d1117&title_color=A8E524&text_color=c9d1d9
+          STREAK_DARK: https://streak-stats.demolab.com?user=PavelCRG&theme=tokyo-night&hide_border=true&background=0D1117&stroke=A8E524&ring=A8E524&fire=A8E524&currStreakLabel=A8E524&sideNums=C9D1D9&currStreakNum=FFFFFF&sideLabels=C9D1D9&dates=C9D1D9
+          THEME_LIGHT: hide_border=true&bg_color=ffffff&title_color=6B9E00&text_color=1f2328&icon_color=6B9E00&hide_title=true&border_color=d0d7de
+          LANGS_LIGHT: hide_border=true&bg_color=ffffff&title_color=6B9E00&text_color=1f2328&border_color=d0d7de
+          STREAK_LIGHT: https://streak-stats.demolab.com?user=PavelCRG&hide_border=true&background=FFFFFF&stroke=6B9E00&ring=6B9E00&fire=6B9E00&currStreakLabel=6B9E00&sideNums=1F2328&currStreakNum=1F2328&sideLabels=656D76&dates=656D76
         run: |
           mkdir -p stats-output languages-output
           curl -fsSL \
-            "${STATS_BASE}/api?username=${USER}&show_icons=true&${THEME}" \
+            "${STATS_BASE}/api?username=${USER}&show_icons=true&${THEME_DARK}" \
             -o stats-output/stats.svg
           curl -fsSL \
-            "${STATS_BASE}/api/top-langs/?username=${USER}&${LANGS_OPTS}&${LANGS_THEME}" \
+            "${STATS_BASE}/api?username=${USER}&show_icons=true&${THEME_LIGHT}" \
+            -o stats-output/stats-light.svg
+          curl -fsSL \
+            "${STATS_BASE}/api/top-langs/?username=${USER}&${LANGS_OPTS}&${LANGS_DARK}" \
             -o languages-output/languages.svg
-          sed -i 's/undefined//g' stats-output/stats.svg languages-output/languages.svg 2>/dev/null || \
-            sed -i '' 's/undefined//g' stats-output/stats.svg languages-output/languages.svg
-          if curl -fsSL --retry 3 --retry-delay 5 "${STREAK_URL}" -o stats-output/streak.svg; then
-            echo "Streak card updated"
+          curl -fsSL \
+            "${STATS_BASE}/api/top-langs/?username=${USER}&${LANGS_OPTS}&${LANGS_LIGHT}" \
+            -o languages-output/languages-light.svg
+          sed -i 's/undefined//g' stats-output/*.svg languages-output/*.svg 2>/dev/null || \
+            sed -i '' 's/undefined//g' stats-output/*.svg languages-output/*.svg
+          if curl -fsSL --retry 3 --retry-delay 5 "${STREAK_DARK}" -o stats-output/streak.svg; then
+            echo "Streak (dark) updated"
           elif [ -f stats-output/streak.svg ]; then
             echo "Streak API unavailable — keeping previous streak.svg"
           elif [ -f assets/streak.svg ]; then
             cp assets/streak.svg stats-output/streak.svg
+          fi
+          if curl -fsSL --retry 3 --retry-delay 5 "${STREAK_LIGHT}" -o stats-output/streak-light.svg; then
+            echo "Streak (light) updated"
+          elif [ -f stats-output/streak-light.svg ]; then
+            echo "Streak light API unavailable — keeping previous streak-light.svg"
+          elif [ -f stats-output/streak.svg ]; then
+            cp stats-output/streak.svg stats-output/streak-light.svg
           fi
 
       - name: Commit changes

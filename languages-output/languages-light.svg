@@ -9,11 +9,11 @@
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #A8E524;
+            fill: #6B9E00;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           
-    .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9 }
+    .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #1f2328 }
   
 
           
@@ -29,7 +29,7 @@
           height="99%"
           stroke="#E4E2E2"
           width="544"
-          fill="#0d1117"
+          fill="#ffffff"
           stroke-opacity="0"
         />
 

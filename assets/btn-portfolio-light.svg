@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" width="200" height="40">
+  <rect width="200" height="40" rx="8" fill="#ffffff" stroke="#6B9E00" stroke-width="1.5"/>
+  <circle cx="22" cy="20" r="9" fill="none" stroke="#6B9E00" stroke-width="1.5"/>
+  <path d="M22 15.5 L22 24.5 M18.5 18.5 L22 15.5 L25.5 18.5" fill="none" stroke="#6B9E00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="25" text-anchor="middle" fill="#1f2328" font-family="Segoe UI,system-ui,sans-serif" font-size="13" font-weight="600">Portfolio</text>
+</svg>

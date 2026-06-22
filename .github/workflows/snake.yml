@@ -32,11 +32,13 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-light.svg?palette=github-light
 
-      - name: Prepare snake file
+      - name: Prepare snake files
         run: |
           mkdir -p snake-output
           cp dist/github-contribution-grid-snake-dark.svg snake-output/snake.svg
+          cp dist/github-contribution-grid-snake-light.svg snake-output/snake-light.svg
           ls -la snake-output/
 
       - name: Commit and push snake
@@ -44,7 +46,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main
-          git add snake-output/snake.svg
+          git add snake-output/snake.svg snake-output/snake-light.svg
           if git diff --staged --quiet; then
             echo "Snake unchanged, skip commit"
             exit 0
